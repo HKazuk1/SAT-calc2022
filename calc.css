@@ -1,0 +1,93 @@
+.haikei{
+    /* background: rgb(81, 81, 81); */
+    /* height: 600px; */
+    display: flex;
+    margin-bottom: auto;
+    width: auto;
+    border-radius: 10px;
+}
+.wrapper{
+    margin: auto;
+}
+.wrapper .calculator{
+    position: relative;
+    display: grid;
+    margin: auto;
+    position: relative;
+    background-image:url("mokume.jfif");
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+.wrapper .calculator .result, .result2{
+    grid-column: span 4;
+    height: 120px;
+    width: 325px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+    border-top: 3px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    border-right: 3px solid rgba(0, 0, 0, 0.3);
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.wrapper .calculator span{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    bottom: 10px;
+    background: rgb(110, 110, 110);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    transition: .5s;
+}
+.wrapper .calculator span:hover{
+    transition: 0s;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    /* border-bottom: 5px solid rgba(255, 255, 255, 0.05); */
+}
+.wrapper .calculator .equal span:active{
+    background: #2785ff;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+}
+.wrapper .calculator .clear{
+    grid-column: span 2;
+    width: 155px;
+    background: rgb(239, 132, 2);
+}
+.wrapper .calculator .equal{
+    background: rgb(53, 188, 229);
+    border-radius: 100px;
+}
+.center{
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: 3px solid rgb(181, 177, 96);
+    background-color: #fbfff7;
+}
